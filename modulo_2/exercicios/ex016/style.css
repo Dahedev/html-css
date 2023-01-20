@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100;
+}
+
+body{
+    background-image: linear-gradient(to right, #A3AB78, #878d62);
+}
+
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(80, 98, 102, 0.507);
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1{
+    background-image: linear-gradient(to right, #506266, #A3AB78);
+    border-radius: 10px;
+    font: normal bold 2em Arial, Verdana, sans-serif;
+    color: rgba(21, 82, 94, 0.884);
+    text-align: center;
+    text-shadow: 1px 0.5px 0px rgba(0, 0, 0, 0.63);
+    box-shadow: 5px 5px 5px #506266;
+}
+
+h2{
+    font: italic bold 1.5em Arial, Verdana, sans-serif;
+    color: #506266;
+    text-align: left;
+    text-shadow: 1px 0.5px 0px rgba(0, 0, 0, 0.603);
+}
+
+video{
+    box-shadow: 5px 5px 5px #506266;
+    margin-left: 150px;
+    border-radius: 5px;
+}
+
+p{
+    text-indent: 30px;
+    text-align: justify;
+}
+

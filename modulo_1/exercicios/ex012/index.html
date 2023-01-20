@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icons/favicon.ico" type="image/x-icon">
+    <title>Áudio e Vídeo</title>
+</head>
+<body>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!--MP3 WAV OGG (Extensões de áudio)-->
+    <!--Primeiro método-->
+    <audio src="musicas/No Filter - NEFFEX.mp3" controls autoplay></audio>
+
+    <!--Primeiro método-->
+    <audio preload="metadata" controls="controls" controls="download/audio" autoplay loop>
+        <source src="musicas/No Filter - NEFFEX.mp3" type="audio/mpeg">
+        <p>Infelismente seu navegador não consegue reproduzir áudio.</p>
+    </audio>
+    <br>
+    <a href="musicas/No Filter - NEFFEX.mp3" download="No Filter - NEFFEX.mp3" type="audio/mp3"> Clique aqui para baixar o arquivo MP3.</a>
+
+    <!--               VÍDEOS                  -->
+
+    <h1>Vídeos em HTML5</h1>
+    <h2>Inserindo vídeos hospedados localmente</h2>
+    <p>Este vídeo está hospedado no meu próprio servidor. <strong>(ANTENÇÃO!)</strong> Vídeos hospedados consumem muito tráfico de dados</p>
+
+    <!--Jeito Simples-->
+    <video src="videos/mar.webm" width="200" controls></video>
+
+    <!-- Método Completo -->
+    <video width="200" poster="images/one_piece.png" controls loop>
+        <source src="videos/mar.mp4" type="video/mp4">
+        <source src="videos/mar.ogv" type="video/ogg">
+        <source src="videos/mar.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reporução e vídeos</p>
+    </video>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <p>Incorporar vídeos de servísos de vídeo não consume tráfico de dados do site do cliente</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/d_qGO4GrbQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XEtHpGSSTOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

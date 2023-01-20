@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        /* Shorthands
+                -> border: 10px solid darkslategray;
+                -> padding: 50px; (Como todas são iguais pode declarar só uma vez)
+                -> margin: 10px auto; (Pode declarar só duas vezes também)
+                -> outline: 5px dashed salmon;
+        */
+
+        body{
+            background-color: rgb(205, 205, 248);
+        }
+
+        h1{ /* box-level */
+            background-color: lightgray;
+            height: 50px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategrey;
+
+            padding-top: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+            padding-left: 30px;
+
+            margin-top: 50px;
+            margin-right: auto;
+            margin-bottom: 50px;
+            margin-left: auto;
+
+            outline-width: 20px;
+            outline-style: dashed;
+            outline-color: salmon;
+        }
+
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 800;
+        }
+
+        a{ /* inline-level */
+            /* o seletor display pode mudar uma tag inline para block ou vise-versa*/
+            display: block;
+            background-color: orange;
+            text-align: center;
+        }
+
+        li, pre, strong{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos <strong>(&lt;h1&gt;)</strong> também são exemplos de box-level, mas os <a href="#">links</a> <strong>(&lt;a&gt;)</strong> são exemplos de inline-level. É possível tranformar uma tag do tipo block para o tipo inline e vise-versa através da propriedade "display". Tags do tipo inline por padrão não possuem características de largura (width) e altura (height), mas é possível formatar as tags para um tipo chamado "inline-block" onde a tag será do tipo inline, mas terá algumas característica do tipo block.</p>
+
+    <h2>Anotações:</h2>
+    <ul>
+        <li>O termo "user agent" referece sempre ao navegador.</li>
+        <li>A característica "display: block;" remete à um bloco do tipo box-level.</li>
+        <li>
+            <pre>
+                <strong>Shorthands</strong>
+                SEM VÍGULAS ENTRE OS PARÂMETROS
+                -> border:  10px solid darkslategray;
+                -> padding: 50px; (Como todas são iguais pode declarar só uma vez)
+                -> margin:  10px auto; (Pode declarar só duas vezes também)
+                -> outline: 5px dashed salmon;
+            </pre>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+
+        header{
+            background-color: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 30px 10px;
+            box-shadow: 1px 1px 5px black;
+        }
+
+        header > div > h1{
+            color: white;
+            margin-top: 15px;
+            margin-left: 20px;
+            margin-right: 84%;
+            padding: 10px 20px 10px 20px;
+            background-color: grey;
+            border-radius: 30px 10px;
+            box-shadow: 1px 1px 5px black;
+            text-shadow: 1px 1px 5px black;
+        }
+
+        nav{ /*Navegação*/
+            background-color: rgb(82, 82, 82);
+            padding: 5px 10px;
+            box-shadow: 1px 1px 3px black;
+            border-radius: 5px;
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            text-shadow: 1px 1px 5px black;
+        }
+
+        main{
+            background-color: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 30px 10px;
+            box-shadow: 1px 1px 5px black;
+        }
+
+        main h1{
+            text-shadow: 1px 1px 1px black;
+        }
+
+        main p{
+            line-height: 2em;
+        }
+
+        img{
+            width: 50%;
+            display: block;
+            margin: auto;
+            border-radius: 35px 10px;
+        }
+
+        img:hover{
+            opacity: 85%;
+            transition-duration: 0.5s;
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 15px;
+            border-radius: 30px 10px;
+        }
+
+        article > aside{
+            display: none;
+        }
+        
+        article:hover > aside{
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-weight: 700;
+            text-decoration: underline;
+            text-align: right;
+        }
+
+        footer{
+            background-color: black;
+            color: antiquewhite;
+            text-align: center;
+            font-style: italic;
+            padding: 1px;
+            margin: 0px -8px;
+            margin-bottom: -10px;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin-bottom: 10px;
+            margin-top: -8%;
+            margin-left: 90%;
+            background-color: grey;
+            border-radius: 50%;
+        }
+
+        div#bola:hover{
+            background-color: rgba(255, 255, 255, 0.507);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Meu site</h1>
+            <div id="bola">
+
+            </div>
+            <nav>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <p><strong>Esportes Política Tecnologia</strong></p>
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ullam, nemo, necessitatibus vel doloremque tempore fugiat dolor impedit natus a quis ducimus eos dolorum consectetur soluta voluptatum illo optio! Incidunt? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore saepe ab explicabo! Libero amet ratione harum? Sed sint magni quas iste, distinctio rerum eaque, eum facilis, sunt ipsa saepe adipisci. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, quasi facere expedita eveniet soluta, corporis voluptatem fugit nisi non assumenda iure aut sit at. Sint laboriosam sequi eum recusandae ut!</p>
+                <abbr title="IRINA-BLOK - www.irinablok.com"><a href="https://www.irinablok.com/android" target="_blank">
+                    <picture>
+                        <!-- Picture tem que ser colocado dentro das tags "abbr" e "a" -->
+                        <source media="(max-width: 800px)" srcset="../../desafios/des010/container/pacote-projeto-d010/imagens/irina-blok-pq.jpg" type="image/jpg">
+                        <img src="../../desafios/des010/container/pacote-projeto-d010/imagens/irina-blok.jpg" alt="Irina-Blok">
+                    </picture>
+                </a></abbr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ullam, nemo, necessitatibus vel doloremque tempore fugiat dolor impedit natus a quis ducimus eos dolorum consectetur soluta voluptatum illo optio! Incidunt? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore saepe ab explicabo! Libero amet ratione harum? Sed sint magni quas iste, distinctio rerum eaque, eum facilis, sunt ipsa saepe adipisci. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, quasi facere expedita eveniet soluta, corporis voluptatem fugit nisi non assumenda iure aut sit at. Sint laboriosam sequi eum recusandae ut!</p>
+                <aside>
+                    <p>Artigo escrito por Fulano</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Dahe</p>
+    </footer>
+</body>
+</html>

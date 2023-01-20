@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        /* O seletor '@font-face' é necessário para inserir uma fonte externa.*/
+        @font-face {
+            font-family: 'newfon';
+            src: url('1942.ttf') format('truetype'), url('Bad\ Signal.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+
+            /*
+                Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typography)
+                - svg
+            */
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        h1{
+            /* O nome de uma fonte externa tem que ser colocado entre ('').*/
+            font-family: 'newfon', 'Times New Roman', Times, serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <ol>
+        <li>O seletor '@font-face' é necessário para inserir uma fonte externa.</li>
+        <li>O nome de uma fonte externa tem que ser colocado entre ('').</li>
+        <li>OBS: é necessário verficar se a fonte está de acordo com as formatações de estilo, peso, e codificação UTF-8</li>
+    </ol>
+
+    <pre>
+        Tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (Apple Advanced Typography)
+            - svg
+    </pre>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, harum labore molestias placeat incidunt nostrum sunt facere ullam, fugiat inventore, quas aliquid quasi aliquam magnam? Ab eveniet quod debitis nesciunt.</p>
+</body>
+</html>
