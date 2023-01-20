@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
             height: 100vh;
@@ -12,13 +12,14 @@
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
-            /* o "contain" faz com que a imagem seja 100% exibida ja o cover cobre a tela inteira mesmo que tenha que cortar a imagem */
+            /* o "contain" faz com que a imagem seja 100% exibida, já o cover cobre a tela inteira mesmo que tenha que cortar a imagem */
             background-size: cover;
+            background-attachment: fixed;
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 700px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -29,6 +30,16 @@
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
+        <p>A característica "contain" no comando "background-size" faz com que a imagem seja 100% exibida ela no entanto gera bordas pretas assim como nos vídeos do YouTube, enquanto que a característica "cover" cobre a tela inteira mesmo que tenha que cortar a imagem.</p>
+        <p>Por padrão, o fundo do body mexe junto com o conteúdo no main, ou seja durante a rolagem de tela. A característica "fixed" através do comando "background-attachment" faz com que a imagem de fundo se matenha imóvel mesmo durante a rolagem de tela.
+        </p>
+        <pre>
+            <strong>Shorthand - background:</strong>
+            color > image > position > repeat > attachment
+            <strong>EXEMPLO:</strong>
+            background: black url('#') center center no-repeat fixed;
+            background-size: cover;
+        </pre>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, facere! Placeat voluptatum suscipit pariatur beatae culpa quae dicta ad hic facere? Ratione illo debitis est modi doloremque consequuntur minima officiis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam aperiam expedita sint. Aliquid distinctio perferendis voluptates laboriosam suscipit necessitatibus libero, voluptatum nisi cum minus sunt rem impedit alias. Perferendis, ex! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, molestias dolor iure magnam dignissimos sed corrupti, dolorem quas assumenda esse qui eos aliquid error! Doloremque laudantium commodi velit itaque reprehenderit?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, facere! Placeat voluptatum suscipit pariatur beatae culpa quae dicta ad hic facere? Ratione illo debitis est modi doloremque consequuntur minima officiis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam aperiam expedita sint. Aliquid distinctio perferendis voluptates laboriosam suscipit necessitatibus libero, voluptatum nisi cum minus sunt rem impedit alias. Perferendis, ex! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, molestias dolor iure magnam dignissimos sed corrupti, dolorem quas assumenda esse qui eos aliquid error! Doloremque laudantium commodi velit itaque reprehenderit?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, facere! Placeat voluptatum suscipit pariatur beatae culpa quae dicta ad hic facere? Ratione illo debitis est modi doloremque consequuntur minima officiis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam aperiam expedita sint. Aliquid distinctio perferendis voluptates laboriosam suscipit necessitatibus libero, voluptatum nisi cum minus sunt rem impedit alias. Perferendis, ex! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, molestias dolor iure magnam dignissimos sed corrupti, dolorem quas assumenda esse qui eos aliquid error! Doloremque laudantium commodi velit itaque reprehenderit?</p>
