@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #container{
+            height: 100vh;
+            background-color: blue;
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            
+            display: block; /* Ou pode ser usado tbm o position relative. */
+            padding: 10px;
+        }
+
+        #conteudo{
+            width: 400px;
+            height: 300px;
+            background-color: orange;
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        div.video{
+            display: block;
+            background-color: green;
+            position: relative;
+            margin: 20px 0px;
+            padding: 30px;
+            padding-bottom: 27%;
+        }
+
+        div.video > iframe{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    <aside>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QyjOt_RyrS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </aside>
+</body>
+</html>

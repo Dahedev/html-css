@@ -30,9 +30,10 @@
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
-        <p>A característica "contain" no comando "background-size" faz com que a imagem seja 100% exibida ela no entanto gera bordas pretas assim como nos vídeos do YouTube, enquanto que a característica "cover" cobre a tela inteira mesmo que tenha que cortar a imagem.</p>
+        <p>A característica "contain" no comando "background-size" faz com que a imagem seja 100% exibida ela no entanto gera bordas pretas assim como nos vídeos do YouTube, enquanto que a característica "cover" cobre a tela inteira mesmo que tenha que cortar a imagem. O parâmetro "100% 100%" (obrigatório por as duas porcentagens) faz com que a imagem ocupe todo o bloco onde ela está localizada, mas isso gera um efeito de distorção se esse bloco mudar de tamanho, como por exemplo, a view port ou o bloco do body.</p>
         <p>Por padrão, o fundo do body mexe junto com o conteúdo no main, ou seja durante a rolagem de tela. A característica "fixed" através do comando "background-attachment" faz com que a imagem de fundo se matenha imóvel mesmo durante a rolagem de tela.
         </p>
+        <p>Quando configurando algum conteúdo ao centro da tela, como por exemplo, um vídeo, neste caso é necessário colocar esse conteúdo dentro de uma div e confirar esta div para que tenha ou uma position: relative ou um display: block para que a centralização aconteça sem falhas. <br>Exemplo: <a href="fundo007.html" target="_blank">link para exemplo</a></p>
         <pre>
             <strong>Shorthand - background:</strong>
             color > image > position > repeat > attachment

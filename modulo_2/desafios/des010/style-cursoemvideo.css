@@ -140,6 +140,7 @@ main img.pequena{
     margin: auto;
 }
 
+/*
 div.video{
     background-image: radial-gradient(var(--cor5), var(--cor3));
     margin: 30px -20px;
@@ -153,6 +154,26 @@ div.video > iframe{
     top: 5%;
     left: 5%;
     width: 90%;
+    height: 90%;
+}
+*/
+
+div.video{
+    background-color: green;
+    margin: 30px -20px;
+    padding: 20px;
+    /* O "padding-bottom" serve para controlar a altura do bloco div */
+    padding-bottom: 30.5%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* O width e height se baseiam na largura e altura do bloco do div (área verde) */
+    width: 50%;
     height: 90%;
 }
 
