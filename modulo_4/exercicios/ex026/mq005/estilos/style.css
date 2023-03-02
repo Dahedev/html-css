@@ -10,6 +10,7 @@
 
 html, body {
     background-color: lightgrey;
+    background-size: cover;
 }
 
 header {
@@ -61,7 +62,8 @@ menu > ul > li > a:hover {
 }
 
 main {
-    width: 90vw;
+    min-width: 250px;
+    max-width: 90vw;
     background-color: white;
     margin: auto;
     margin: 0px auto 10px auto;
